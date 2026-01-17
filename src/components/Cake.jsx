@@ -14,7 +14,6 @@ function Cake({ blown, onBlow }) {
                                     className = "flame"
                                     initial = {{ opacity: 0 }}
                                     animate = {{ opacity: 1 }}
-                                    exit = {{ opacity: 0, scale: 0.6 }}
                                     transition = {{ delay: 1 + i * 0.2, duration: 0.6 }}
                                 />
                             )}
