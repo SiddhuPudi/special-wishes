@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "../styles/Wish.css";
-import Scene from "./Scene";
+import Scene from "./Scene.jsx";
 
 function Wish({ next, prev }) {
     return (

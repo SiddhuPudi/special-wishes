@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import "../styles/FinalScene.css";
-import Scene from "./Scene";
+import Scene from "./Scene.jsx";
 import Cake from "./Cake";
 
 function FinalScene() {

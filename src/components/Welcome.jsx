@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Scene from "./scene";
+import Scene from "./Scene.jsx";
 import "../styles/Welcome.css";
 
 function Welcome({ next }) {

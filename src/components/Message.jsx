@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Scene from "./Scene";
+import Scene from "./Scene.jsx";
 import "../styles/Message.css";
 
 const messageText = `Happy Birthday ✨
