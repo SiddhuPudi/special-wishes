@@ -1,0 +1,71 @@
+.message-wrapper {
+    height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.message-wrapper::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 8, 20, 0.25);
+    opacity: 0;
+    transition: opacity 1.2s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.message-wrapper.typing::before {
+    opacity: 1;
+}
+
+.message-text {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    max-width: 520px;
+    opacity: 0.9;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    margin-bottom: 2.5rem;
+}
+
+.typing-caret {
+    display: inline-block;
+    margin-left: 2px;
+    animation: caretBlink 1.2s infinite;
+    opacity: 0.8;
+}
+
+.message-buttons {
+    display: flex;
+    gap: 1.4rem;
+    justify-content: center;
+}
+
+.message-buttons button {
+    background: transparent;
+    border: 1px solid var(--lavender);
+    color: var(--lavender);
+    padding: 9px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.35s ease;
+}
+
+.message-buttons button:hover {
+    background: var(--soft-glow);
+    box-shadow: 0 0 14px var(--soft-glow);
+    transform: translateY(-1px);
+}
+
+@keyframes caretBlink {
+    0%, 50% { opacity: 0.8; }
+    51%, 100% { opacity: 0.2; }
+}

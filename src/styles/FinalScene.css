@@ -1,0 +1,37 @@
+.final-wrapper {
+    height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.final-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final-line {
+    font-size: 1.15rem;
+    line-height: 1.25;
+    opacity: 0.95;
+    margin-bottom: 0.4rem;
+}
+
+.final-sub {
+    line-height: 1.5;
+    font-size: 0.95rem;
+    opacity: 0.75;
+    max-width: 480px;
+    margin-bottom: 2.2rem;
+}
+
+.final-end {
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}

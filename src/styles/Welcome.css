@@ -1,0 +1,56 @@
+.welcome-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.welcome-title {
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.welcome-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--lavender), transparent);
+    transform: translateX(-50%);
+    opacity: 0.6;
+}
+
+.welcome-text {
+    max-width: 420px;
+    opacity: 0.85;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 2.2rem;
+}
+
+.welcome-button {
+    padding: 10px 26px;
+    border-radius: 22px;
+    background: transparent;
+    border: 1px solid var(--lavender);
+    color: var(--lavender);
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.35s ease;
+}
+
+.welcome-button:hover {
+    background: var(--soft-glow);
+    box-shadow: 0 0 14px var(--soft-glow);
+    transform: translateY(-1px);
+}

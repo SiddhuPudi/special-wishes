@@ -1,0 +1,15 @@
+:root{
+    --bg-main: #0b1026;
+    --bg-secondary: #141a3a;
+    --text-main: #f5f5ff;
+    --lavender: #b7b9ff;
+    --soft-glow: rgba(183, 185, 255, 0.3);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, var(--bg-secondary), var(--bg-main));
+    color: var(--text-main);
+    overflow: hidden;
+}

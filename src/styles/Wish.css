@@ -1,0 +1,97 @@
+.wish-wrapper {
+    height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.wish-title {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    font-size: 1.15rem;
+}
+
+.wish-symbols {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.8rem;
+}
+
+.wish-symbols:hover .wish-item {
+    opacity: 0.55;
+    transition: opacity 0.4s ease;
+}
+
+.wish-symbols:hover .wish-items:hover {
+    opacity: 1;
+}
+
+.wish-item {
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    transition: filter 0.4s ease;
+}
+
+.wish-item:hover {
+    filter: brightness(1.15);
+}
+
+.wish-item:hover .symbol {
+    text-shadow: 0 0 14px rgba(183, 185, 255, 0.6);
+}
+
+.symbol {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    animation: float 5s ease-in-out infinite;
+    transition: tex-shadow 0.4s ease;
+}
+
+.wish-item:nth-child(2) .symbol { animation-duration: 4.5s; }
+.wish-item:nth-child(3) .symbol { animation-duration: 5.5s; }
+
+.wish-item p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.45;
+}
+
+.wish-buttons {
+    display: flex;
+    gap: 1.4rem;
+    justify-content: center;
+}
+
+.wish-buttons button {
+    background: transparent;
+    border: 1px solid var(--lavender);
+    color: var(--lavender);
+    padding: 9px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.35s ease;
+}
+
+.wish-buttons button:hover {
+    background: var(--soft-glow);
+    box-shadow: 0 0 14px var(--soft-glow);
+    transform: translateY(-1px);
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
